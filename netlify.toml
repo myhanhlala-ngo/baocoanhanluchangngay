@@ -10,3 +10,12 @@
   for = "/*"
   [headers.values]
     Cache-Control = "no-cache"
+[[redirects]]
+  from = "/api/db"
+  to = "/.netlify/functions/db"
+  status = 200
+
+[[redirects]]
+  from = "/api/db/*"
+  to = "/.netlify/functions/db/:splat"
+  status = 200
